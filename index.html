@@ -101,12 +101,12 @@
     <div id="mainContent" class="locked">
         <div id="rewardAlert" class="reward-alert-section" style="display: none;">🎁 受取可能なリワードがあります！</div>
         <div id="categoryContainers"></div>
-        <button class="btn-reset" onclick="resetAll()">全リセット（翌朝用）</button>
+        <button class="btn-reset" onclick="resetAll()">アクティビティ完了をリセット）</button>
     </div>
 </div>
  
 <script>
-    const catNames = { reward: "🎁 【即回収】受取可能リワード", daily: "デイリーアクティビティ", hazama: "狭間イベント", full: "フルイベント", long: "長期イベント", none: "今はなし（待機中）" };
+    const catNames = { reward: "🎁受取可能リワード", daily: "デイリーアクティビティ", hazama: "狭間イベント", full: "フルイベント", long: "長期イベント", none: "今はなし（待機中）" };
     let catStatus = JSON.parse(localStorage.getItem('catStatus')) || { reward: true, daily: true, hazama: false, full: false, long: false, none: false };
  
     // 初期データ
